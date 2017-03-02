@@ -12,6 +12,8 @@
       <script src="https://d3js.org/d3.v4.min.js"></script>
       <script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
         <script>
+                
+                var a = 111;
                 var dd3Net = (function () {
                     var dd3Net = {
                         use: function(protocol,config) {
@@ -42,7 +44,7 @@
                             }
                         },
                     };
-
+                    console.log(a);
 
                     var peerObj = {
                         id: null,
@@ -92,9 +94,32 @@
                     return dd3Net;
                 })();
              
-                dd3Net.use('peerjs',{});
-                dd3Net.init();
-                dd3Net.connect(1,2);
+
+
+                function dd3NET(){
+                    this.self = this;
+                }
+
+                dd3NET.prototype.a = function(){
+                    console.log(this);
+                    console.log(this.self);
+                 
+                    return (function(self){
+                        
+                        console.log();
+                    })();
+                }
+
+                dd3NET.prototype.b = function(){
+                    console.log('b');
+                }
+
+
+                dd3NET = new dd3NET();
+                dd3NET.a();
+                //dd3Net.use('peerjs',{});
+               // dd3Net.init();
+                //dd3Net.connect(1,2);
           
         </script>
 
