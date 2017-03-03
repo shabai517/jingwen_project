@@ -14,109 +14,35 @@
         <script>
                 
                 var a = 111;
-                var dd3Net = (function () {
-                    var dd3Net = {
-                        use: function(protocol,config) {
-                            switch(protocol){
-                                case 'peerjs':
-                                    this.id = peerObj.id;
-                                    this.peers = peerObj.peers;
-                                    this.connections = peerObj.connections;
-                                    this.buffers = peerObj.buffers;
-                                    this.init = peerObj.init;
-                                    this.connect = peerObj.connect;
-                                    this.receive = peerObj.receive;
-                                    this.sendTo = peerObj.sendTo;
-                                    this.flush = peerObj.flush;
-                                    var host = config.host || "146.169.32.109";
-                                    var port = config.host || 55555;
-                                    this.peer = new Peer(host, port);
-
-                                    return this;
-                                break;
-
-                                case 'singalr':
-
-                                break;
-                                case 'socketio':
-
-                                break;
-                            }
-                        },
-                    };
-                    console.log(a);
-
-                    var peerObj = {
-                        id: null,
-                        peers: [],
-                        connections: [],
-                        buffers: [],
-
-                        init: function(conn, r, c){
-                            //utils.log("Connection established with Peer (" + [r, c] + "): " + conn.peer, 0);
-                            //conn.on("data", dd3Net.receive);
-                            this.flush(r, c);
-                        },
-
-                        connect: function (r, c){
-                            r = +r;
-                            c = +c;
-
-                            // Try to find peer with r and c as row and column - use Array.some to stop when found
-                            // if the row, column pair is not the same as those of the connections, return false
-
-                            return dd3Net.peers.some(function (p) {
-                                if (+p.row !== r || +p.col !== c)
-                                    return false;
-
-                                var conn = dd3Net.peer.connect(p.peerId, { reliable: true, metadata: { initiator: [browser.row, browser.column] } });
-                                //conn.on("open", dd3Net.init.bind(null, conn, r, c));
-                                //dd3Net.connections[r][c] = conn;
-                                dd3Net.buffers[r][c] = [];
-                                console.log(dd3Net.buffers);
-                                return true;
-                            });
-                        },
-
-                        receive: function (){
-                            console.log('peerReceive');
-                        },
-
-                        sendTo: function () {
-                        
-                        },
-
-                        flush: function (r,c){
-                            console.log('peerFlush');
-                        }
-                    }
-
-                    return dd3Net;
-                })();
-             
-
+                var m= [1,2,3,4,5]
+           
+                
 
                 function dd3NET(){
-                    this.self = this;
+                    this.m = 0
                 }
 
                 dd3NET.prototype.a = function(){
+                    
+                   console.log(this);
+                   m.forEach(function(){
                     console.log(this);
-                    console.log(this.self);
-                 
-                    return (function(self){
-                        
-                        console.log();
-                    })();
+                   })
                 }
 
                 dd3NET.prototype.b = function(){
-                    console.log('b');
+                    this.m =1;
                 }
 
-
-                dd3NET = new dd3NET();
+             
+                
+                var dd3NET = new dd3NET();
+                
                 dd3NET.a();
+                //dd3NET.a.bind(dd3NET)();
+                //dd3NET.a.bind(null)();
+              
+                //dd3NET.a();
                 //dd3Net.use('peerjs',{});
                // dd3Net.init();
                 //dd3Net.connect(1,2);
