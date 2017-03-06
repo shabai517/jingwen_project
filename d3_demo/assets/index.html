@@ -16,7 +16,20 @@
                 var a = 111;
                 var m= [1,2,3,4,5]
            
-                
+                var b = {
+                  a:function(data){
+                    var _self = this;
+                    //console.log()
+                    console.log(this);
+                    switch (data){
+                      case 'data':
+                      console.log(this);
+                    }
+                  },
+                  b:function(){
+
+                  }
+                }
 
                 function dd3NET(){
                     this.m = 0
@@ -46,6 +59,7 @@
                 //dd3Net.use('peerjs',{});
                // dd3Net.init();
                 //dd3Net.connect(1,2);
+                b.a('data');
           
         </script>
 
