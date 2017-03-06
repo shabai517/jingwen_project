@@ -5,6 +5,7 @@ body {
 	font-size: 14px;
 	line-height: 1.42857143;
 	color: #333;
+	min-width: 250px;
 	background-color: #fff;
 	-webkit-font-smoothing: antialiased;
 	-webkit-touch-callout: none;
@@ -21,6 +22,9 @@ nav{
 }
 nav a{
 	color: 	#fff !important	;
+}
+.navbar{
+	min-width: 250px;
 }
 #navbar{
 	min-height: 50px;
@@ -71,7 +75,7 @@ nav a{
 }
 @media (min-width: 768px) { 
 	#navbar{
-		padding-top: 75px ;
+		padding: 70px 0 0 0 ;
 	}
 	#navbar .nav-right{
 		display: inline;
@@ -85,7 +89,7 @@ nav a{
 		max-width: 100%;	
 		padding: 0 1.25%;
 		margin: 0 1.25%;
-		top:10px;
+		top:5px;
 		position: absolute;	
 		width:50%;
 		left:25%;
@@ -101,7 +105,7 @@ nav a{
 }
 @media (min-width: 992px) { 
 	#navbar{
-		padding: 	5px 0;
+		padding: 0;
 	}
 	#navbar .nav-right{
 		display: inline-block;
