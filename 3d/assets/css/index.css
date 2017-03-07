@@ -139,6 +139,10 @@ nav a{
 .share .share-service{
 	text-align: center;
 }
+.share .share-service-container{
+	width: 80%;
+	margin:0 auto;
+}
 .share .share-service-content{
 	margin-top: 0.5rem;
 	font-size: 0.4rem;
@@ -430,12 +434,20 @@ nav a{
 		padding-top: 0.7rem;
 	    padding-left: 3rem;
 	}
+	.show .single-screen{
+		width: 80%;
+		margin:0 auto;
+	}
+
 	.show .small-screen
 	{
 		display: none;
 	}
 	.show .middle-screen{
 		display: block;
+		padding-bottom: 1rem;
+		width: 80%;
+		margin:0 auto; 
 	}
 }
 @media (min-width: 1200px){
