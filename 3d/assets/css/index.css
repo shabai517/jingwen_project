@@ -154,7 +154,98 @@ nav a{
 	cursor: pointer;
 	text-decoration: underline !important;
 }
+.discovery{
+	background-repeat: repeat;
+    background-size: auto;
+    background-color: transparent;
+    background-position: 50% 50%;
+    background-image: url("../image/discovery-background.jpg");
+}
+.discovery-title-group{
+	padding: 3rem 0;
+	text-align: center;
+}
+.discovery-title-group .s-title{
+	color: white;
+	font-size: 0.8rem;
+}
 
+.discovery-title-group .s-subtitle{
+	 margin-top: 0.4rem;
+	 font-size: 0.4rem;
+	 color: white;
+}
+
+.discovery .details
+{
+	text-align: center;
+	padding: 1.2rem 0;
+}
+.discovery .details a{
+	font-size: 0.3rem;
+	color: white;
+	cursor: pointer;
+	text-decoration: underline !important;
+}
+
+.show{
+	background: #35393e;
+}
+.show .show-service{
+	text-align: center;
+	
+}
+.show .show-service-text
+{
+	background-color: white;
+	padding: 0.5rem 0.3rem;
+	border-radius: 3px;
+	max-width: 15rem;
+}
+.show .details a{
+	font-size: 0.3rem;
+    color: #555;
+    cursor: pointer;
+    text-decoration: underline !important;
+}
+
+.show-title-group{
+	padding: 1rem 0;
+	text-align: center;
+}
+.show-title-group .s-title{
+	color: white;
+	font-size: 0.8rem;
+}
+
+.show-title-group .s-subtitle{
+	 margin-top: 0.4rem;
+	 font-size: 0.4rem;
+	 color: white;
+}
+.show .show-service-container{
+	padding:0.5rem 2rem;
+}
+.show-service-title{
+	font-size: 0.5rem;
+	margin-bottom: 0.2rem;
+
+}
+.show-service-content{
+	font-weight: bold;
+    font-size: 0.35rem;
+	color: #f35c2c;
+	margin-bottom: 0.2rem;
+}
+.show .small-screen
+{
+	display: block;
+	padding-bottom: 1rem;
+}
+.show .middle-screen{
+	display: none;
+	padding-bottom: 1rem;
+}
 @media (min-width: 768px) { 
 	.slide{
 		padding-top: 3rem;
@@ -233,6 +324,21 @@ nav a{
 	}
 	#navbar .nav-tiem{
 		padding: 0.2rem 0.5rem;
+	}
+	.show-service-image-right{
+		padding-top: 0.7rem;
+    	padding-right: 3rem;
+	}
+	.show-service-image-left{
+		padding-top: 0.7rem;
+	    padding-left: 3rem;
+	}
+	.show .small-screen
+	{
+		display: none;
+	}
+	.show .middle-screen{
+		display: block;
 	}
 }
 @media (min-width: 1200px){
