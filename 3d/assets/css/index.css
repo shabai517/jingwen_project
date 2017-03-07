@@ -54,6 +54,12 @@ nav a{
 	padding: 0% 17%;
 	font-size: 0.33rem;
 }
+#navbar .me a{
+	border: 1px solid #fff;
+	border-radius: 3px;
+	padding: 0.1rem 0.2rem;
+}
+    
 .navbar-header button{
 	border: none !important;
 	background-color: rgb(240, 94, 45);
@@ -148,6 +154,7 @@ nav a{
 	cursor: pointer;
 	text-decoration: underline !important;
 }
+
 @media (min-width: 768px) { 
 	.slide{
 		padding-top: 3rem;
