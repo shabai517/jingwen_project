@@ -5,7 +5,7 @@ body {
 	font-size: 14px;
 	line-height: 1.42857143;
 	color: #333;
-	min-width: 250px;
+	min-width: 350px;
 	background-color: #fff;
 	-webkit-font-smoothing: antialiased;
 	-webkit-touch-callout: none;
@@ -24,7 +24,7 @@ nav a{
 	color: 	#fff !important	;
 }
 .navbar{
-	min-width: 250px;
+	min-width: 350px;
 	border: none !important;
 }
 #navbar{
@@ -85,9 +85,9 @@ nav a{
 	background-image: url("../image/slide-background.jpg");
 }
 .slide .left{
-	height: 500px;
+	height: 400px;
 	text-align: center;
-	padding: 100px 0;
+	padding-top: 70px
 }
 
 .slide .left h1{
@@ -110,15 +110,18 @@ nav a{
     font-size: 22px;
 }
 .slide .right{
-	height: 500px;
+	height: 400px;
 	text-align: center;
-	padding: 100px 0;
 }
 
 @media (min-width: 768px) { 
 	.slide{
 		padding-top: 150px;
 	}
+	.slide .left{
+		padding-top: 100px 0;
+	}
+	
 	#navbar{
 		padding: 70px 0 0 0 ;
 	}
@@ -151,6 +154,16 @@ nav a{
 @media (min-width: 992px) { 
 	.slide{
 		padding-top: 100px;
+	}
+	.slide .left{
+		height: 500px;
+		text-align: center;
+		padding: 100px 0;
+	}
+	.slide .right{
+		height: 500px;
+		text-align: center;
+		padding: 100px 0;
 	}
 	#navbar{
 		padding: 0;
