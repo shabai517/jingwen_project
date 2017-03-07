@@ -14,7 +14,7 @@ body {
 	user-select: none;
 }
 a, a:-webkit-any-link{
-	text-decoration: none !important;
+	text-decoration: none;
 }
 nav{
 	background: #2f2f2f !important;	
@@ -126,11 +126,27 @@ nav a{
 	 font-size: 0.5rem;
 	 color: #999;
 }
-.share-service{
+.share{
+	/*padding: 0.5rem 0;*/
+	background-color: #f2f2f2;
+}
+.share .share-service{
 	text-align: center;
 }
-.share-service-content{
-	font-size: 0.5rem;
+.share .share-service-content{
+	margin-top: 0.5rem;
+	font-size: 0.4rem;
+}
+.share .details
+{
+	text-align: center;
+	padding: 1.2rem 0;
+}
+.share .details a{
+	font-size: 0.3rem;
+	color: #555;
+	cursor: pointer;
+	text-decoration: underline !important;
 }
 @media (min-width: 768px) { 
 	.slide{
@@ -167,6 +183,9 @@ nav a{
 	}
 	.navbar-header a{
 		display: none;
+	}
+	.share .share-service{
+		margin:0.8rem 0;
 	}
 }
 @media (min-width: 992px) { 
