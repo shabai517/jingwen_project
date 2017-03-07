@@ -17,6 +17,8 @@
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!--rem settings-->
+    <script>!function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=a/2*s*n+"px"},e.exports=t["default"]}]);  flex(100, 1);</script>
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -28,7 +30,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a><img src="./image/logo.png" alt="HTML tutorial" style="width:40px;height:40px;border:0;"></a>
+          <a><img src="./image/logo.png" alt="HTML tutorial" style="width:0.8rem;height:0.8rem;border:0;"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <span class="nav-left">
@@ -39,7 +41,7 @@
 
             <span class="nav-center">
               <span class="nav-tiem">
-                <img src="./image/logo.png" alt="HTML tutorial" style="width:64px;height:64px;border:0;">
+                <img src="./image/logo.png" alt="HTML tutorial" style="width:1.28rem;height:1.28rem;border:0;">
                </span>
             </span>
 
@@ -67,7 +69,40 @@
         </div>
         <div class="col-md-6">
           <div class="right">
-            <iframe id="banner-demo" allowfullscreen="yes" scrolling="no" frameborder="0" src="https://dev.huasheng.io/inner-page-demo.html" style="width: 100%; height: 267px;"></iframe>
+            <iframe id="banner-demo" allowfullscreen="yes" scrolling="no" frameborder="0" src="https://dev.huasheng.io/inner-page-demo.html" style="width: 100%; height: 5.34rem;"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid share">
+      <div class="row">
+        <div class="share-title-group">
+          <div class="s-title">
+            简单易用的 3D&VR 分享社区
+          </div>
+          <div class="s-subtitle">
+            3D&amp;VR for everyone
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="share-service">
+            <img src="./image/upload.png" style="width:3.2rem;height:3.2rem;">
+            <div class="share-service-content">免费上传3D模型/场景​</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="share-service">
+            <img src="./image/browse.png">
+            <div class="share-service-content">全平台3D&VR观看​</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="share-service">
+            <img src="./image/embed.png">
+            <div class="share-service-content">一键分享/嵌入到您的网站</div>
           </div>
         </div>
       </div>
