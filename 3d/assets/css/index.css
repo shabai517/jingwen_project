@@ -322,6 +322,27 @@ nav a{
     cursor: pointer;
     font-size: 0.44rem;
 }
+.footer{
+	background: #2f2f2f !important;	
+	height: 1.2rem;
+}
+.footer-info{
+	width: 70%;
+	margin: 0 auto; 
+	text-align: center;
+	line-height: 1.2rem;
+}
+.footer-info a{
+	font-size: 0.3rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline !important;
+}
+.footer-info span{
+	font-size: 0.3rem;
+    color: white;
+}
+    
 @media (min-width: 768px) { 
 	.slide{
 		padding-top: 3rem;
