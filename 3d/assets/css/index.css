@@ -246,6 +246,82 @@ nav a{
 	display: none;
 	padding-bottom: 1rem;
 }
+.customer{
+	background-color: #f2f2f2;
+}
+.customer .customer-service{
+	text-align: center;
+	
+}
+.customer .customer-service-text
+{
+	background-color: white;
+	padding: 0.5rem 0.3rem;
+	border-radius: 3px;
+	margin-top: 0.5rem;
+	min-width: 3.6rem;
+	width:100%;
+}
+
+.customer-title-group{
+	padding: 1rem 0;
+	text-align: center;
+}
+
+.customer-title-group .s-title{
+	 font-size: 0.8rem;
+}
+
+.customer-service-container
+{
+	padding: 1.5rem 0;
+	width: 80%;
+    margin: 0 auto;
+}
+.customer-service-title{
+	font-size: 0.5rem;
+	margin-bottom: 0.2rem;
+
+}
+.customer-service-content{
+	font-weight: bold;
+    font-size: 0.35rem;
+	color: #f35c2c;
+	margin-bottom: 0.2rem;
+}
+.join{
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    background-position: 50% 50%;
+    background-image: url("../image/join-background.jpg");
+}
+.join-title-group{
+	padding: 1.5rem 0;
+	text-align: center;
+	color: white;
+}
+.join-title-group .s-title
+{
+	font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+.join-title-group .s-subtitle
+{
+	font-size: 0.4rem;
+    margin-bottom: 1.4rem;
+}
+.join-title-group a
+{
+    border: 0.04rem solid white;
+    border-radius: 0.08rem;
+    color: white;
+    padding: 0.4rem 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.44rem;
+}
 @media (min-width: 768px) { 
 	.slide{
 		padding-top: 3rem;
