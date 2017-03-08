@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/functions.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--rem settings-->
+    <script>!function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=a/2*s*n+"px"},e.exports=t["default"]}]);  flex(100, 1);</script>
+  </head>
+  <body>
+    <div id = "nav-component">
+      <my-nav-component></my-nav-component>
+    </div>
+
+    <div class="container-fluid whole-view">
+      <div class="row">
+        <div class = "whole-view-title-group">
+           <div class="s-title">
+            简单易用的3D Viewer
+           </div>
+           <div class="s-subtitle">
+            轻松分享3D模型、全景照片、VR场景...
+           </div>
+           <a href="">了解功能</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid cloud">
+      <div class="row middle-screen">
+        <div class="col-md-4">
+          <div class="cloud-service cloud-service-image-left">
+              <img src="./image/cloud.png" style="width:2.5rem;height:2.5rem;">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class = "cloud-service-container">
+            <div class="cloud-service cloud-service-text">
+                <div class="cloud-service-title">
+                  云端操作
+                </div>
+                <div class="cloud-service-content">
+                  无需安装任何插件，浏览器云端上传、管理、分享您的3D模型和全景图片&视频。安全高速的CDN网络和高质量的渲染效果，让您专注内容本身，无需担心观看体验。
+                </div>
+                <div class = "details">* 主流浏览器支持，详见<a>平台参数</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid vr">
+      <div class="row middle-screen">
+        <div class="col-md-8">
+          <div class = "vr-service-container">
+            <div class="vr-service vr-service-text">
+                <div class="vr-service-title">
+                  Web 3D/全景/VR
+                </div>
+                <div class="vr-service-content">
+                  基于Web的 3D/全景/VR 浏览，无需专业软件和代码即可添加注释、组建场景，全面支持WebVR规范，轻松体验VR。我们致力于提供完善的 Web 3D 体验。更多炫酷功能陆续上线。
+                </div>
+                <div class = "details">* 需要WebGL支持，主流桌面/移动浏览器已覆盖<!--<a>平台参数</a>--></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="vr-service vr-service-image-right">
+              <img src="./image/browse.png" style="width:2.5rem;height:2.5rem;">
+          </div>
+        </div>
+      </div>
+      <div class="row small-screen">
+        <div class="col-md-4">
+          <div class="vr-service vr-service-image-right">
+              <img src="./image/browse.png" style="width:2.5rem;height:2.5rem;">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class = "vr-service-container">
+            <div class="vr-service vr-service-text">
+                <div class="vr-service-title">
+                  Web 3D/全景/VR
+                </div>
+                <div class="vr-service-content">
+                  基于Web的 3D/全景/VR 浏览，无需专业软件和代码即可添加注释、组建场景，全面支持WebVR规范，轻松体验VR。我们致力于提供完善的 Web 3D 体验。更多炫酷功能陆续上线。
+                </div>
+                <div class = "details">* 需要WebGL支持，主流桌面/移动浏览器已覆盖<!--<a>平台参数</a>--></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid embed">
+      <div class="row middle-screen">
+        <div class="col-md-4">
+          <div class="embed-service embed-service-image-left">
+              <img src="./image/embed.png" style="width:2.5rem;height:2.5rem;">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class = "embed-service-container">
+            <div class="embed-service embed-service-text">
+                <div class="embed-service-title">
+                  一键分享&内嵌
+                </div>
+                <div class="embed-service-content">
+                  一键生成分享代码，可以分享&内嵌到任意网站、论坛、微博、微信... 无需复杂设置，即可为您的网站开启 3D&VR 体验。
+                </div>
+                <div class = "details"><p>* 需要网站\<iframe\>内嵌支持</p><!--<a>平台参数</a>--></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid secure">
+      <div class="row middle-screen">
+        <div class="col-md-8">
+          <div class = "secure-service-container">
+            <div class="secure-service secure-service-text">
+                <div class="secure-service-title">
+                  安全 & 版权保护
+                </div>
+                <div class="secure-service-content">
+                  <p>我们了解隐私的敏感性，您的隐私数据都会都过SSL安全通道传输。我们更加知道保护原创知识产权的重要性，您上传的任何原创作品都可以自主选择<知识共享许可协议>加以许可保护。</p>
+                </div>
+                <div class = "details"><a>知识共享许可协议</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="secure-service secure-service-image-right">
+              <img src="./image/secure.png" style="width:2.5rem;height:2.5rem;">
+          </div>
+        </div>
+      </div>
+      <div class="row small-screen">
+         <div class="col-md-4">
+          <div class="secure-service secure-service-image-right">
+              <img src="./image/secure.png" style="width:2.5rem;height:2.5rem;">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class = "secure-service-container">
+            <div class="secure-service secure-service-text">
+                <div class="secure-service-title">
+                  安全 & 版权保护
+                </div>
+                <div class="secure-service-content">
+                  <p>我们了解隐私的敏感性，您的隐私数据都会都过SSL安全通道传输。我们更加知道保护原创知识产权的重要性，您上传的任何原创作品都可以自主选择<知识共享许可协议>加以许可保护。</p>
+                </div>
+                <div class = "details"><a>知识共享许可协议</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid platform-parameters">
+      <div class="row">
+        <div class = "platform-parameters-title-group">
+           <div class="s-title">
+            平台参数
+           </div>
+           <div class="s-subtitle">
+            浏览说明
+           </div>
+           <div class="s-subtitle">
+            上传说明
+           </div>
+           <div class="s-subtitle">
+            自定义功能
+           </div>
+           <a href="">立即加入</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid footer">
+      <div class="row">
+          <div class = "footer-info">
+            <a href="">联系我们</a>
+            <span> | © 2016 花笙科技 | </span>
+            <a href="">微信公众号</a>
+          </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="./js/nav.js"></script>
+  </body>
+</html>

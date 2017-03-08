@@ -1,0 +1,26 @@
+import Vue from 'vue'
+import Router from 'vue-router'
+import Hello from '../components/Hello'
+import Feature from '../components/feature'
+
+Vue.use(Router)
+
+export default new Router({
+  mode: 'history',
+  routes: [
+    {
+      path: '/',
+      name: 'Hello',
+      component: Hello
+    },
+    {
+      path:'/features',
+      component: Feature
+    }
+    /*
+    {
+    	path:'*',
+    	component: notFound
+    }*/
+  ]
+})
