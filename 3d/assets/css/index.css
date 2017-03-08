@@ -81,6 +81,7 @@ nav a{
     display: inline-block;
 }
 
+/*slide style*/
 .slide{
 	color: white;
 	padding-top: 1rem;
@@ -119,19 +120,8 @@ nav a{
 	height: 8rem;
 	text-align: center;
 }
-.share-title-group{
-	text-align: center;
-	padding: 1rem 0;
-}
-.share-title-group .s-title{
-	 font-size: 0.8rem;
-}
 
-.share-title-group .s-subtitle{
-	 margin-top: 0.2rem;
-	 font-size: 0.5rem;
-	 color: #999;
-}
+/*share style*/
 .share{
 	/*padding: 0.5rem 0;*/
 	background-color: #f2f2f2;
@@ -158,6 +148,21 @@ nav a{
 	cursor: pointer;
 	text-decoration: underline !important;
 }
+.share-title-group{
+	text-align: center;
+	padding: 1rem 0;
+}
+.share-title-group .s-title{
+	 font-size: 0.8rem;
+}
+
+.share-title-group .s-subtitle{
+	 margin-top: 0.2rem;
+	 font-size: 0.5rem;
+	 color: #999;
+}
+
+/*discovery style*/
 .discovery{
 	background-repeat: repeat;
     background-size: auto;
@@ -192,6 +197,7 @@ nav a{
 	text-decoration: underline !important;
 }
 
+/*show style*/
 .show{
 	background: #35393e;
 }
@@ -250,6 +256,8 @@ nav a{
 	display: none;
 	padding-bottom: 1rem;
 }
+
+/*customer style*/
 .customer{
 	background-color: #f2f2f2;
 }
@@ -293,6 +301,8 @@ nav a{
 	color: #f35c2c;
 	margin-bottom: 0.2rem;
 }
+
+/*join style*/
 .join{
 	background-repeat: no-repeat;
     background-size: cover;
@@ -326,6 +336,8 @@ nav a{
     cursor: pointer;
     font-size: 0.44rem;
 }
+
+/*footer style*/
 .footer{
 	background: #2f2f2f !important;	
 	height: 1.2rem;
@@ -436,7 +448,7 @@ nav a{
 	}
 	.show .single-screen{
 		width: 80%;
-		margin:0 auto;
+		margin: 0 auto 1rem auto;
 	}
 
 	.show .small-screen
