@@ -153,13 +153,100 @@
             平台参数
            </div>
            <div class="s-subtitle">
-            浏览说明
+              <div class="s-item-title">浏览说明</div>
+              <ul class="s-item-ul">
+                <li>
+                  <p>兼容性</p>
+                  <ul>
+                    <li>桌面: Internet Explorer 11+, Firefox, Google Chrome, Safari 等国内主流浏览器</li>
+                    <li>移动: iOS Safari, Android Chrome 及主流移动浏览器（e.g. 微信内置浏览器)</li>
+                  </ul>
+                </li>
+                <li>
+                  <p>观看次数</p>
+                  <ul>
+                    <li>个人版：1000次/年</li>
+                    <li>专业版：10000次/年</li>
+                    <li>企业版：无限量</li>
+                    <li>个人及专业版超出套餐后将被限速，不再提供CDN加速支持</li>
+                  </ul>
+                </li>
+                <li>
+                  <p>外部内嵌</p>
+                  <ul>
+                    <li>允许 iframe 内嵌</li>
+                  </ul>
+                </li>
+                <li>
+                  <p>VR支持</p>
+                  <ul>
+                    <li>支持 <a id = "webvr" target="_blank" href="https://w3c.github.io/webvr/">WebVR</a> 标准，如 HTC Vive, Oculus Rift and Gear VR</li>
+                    <li>Google Cardboard 及类似VR眼镜</li>
+                  </ul>
+                </li>
+              </ul>
            </div>
            <div class="s-subtitle">
-            上传说明
+              <div class="s-item-title">上传说明</div>
+              <ul class="s-item-ul">
+                <li>
+                  <p>支持模型/场景数量</p>
+                  <ul>
+                    <li>个人版5个，专业版20个，企业版无限量</li>
+                  </ul>
+                </li>
+                <li>
+                  <p>上传大小</p>
+                  <ul>
+                    <li>个人版20M，专业版100M，企业版500M</li>
+                  </ul>
+                </li>
+                <li>
+                  <p>上传格式</p>
+                  <ul>
+                    <li>支持 Equirectangular 全景图片 (JPG, PNG) 和全景视频 (.mp4)</li>
+                    <li>支持 Wavefront(.obj & .mtl) 3D模型 (主流3D软件均可导出Wavefront模型)</li>
+                    <li>更多原生格式陆续支持中</li>
+                  </ul>
+                </li>
+              </ul>
            </div>
            <div class="s-subtitle">
-            自定义功能
+              <div class="s-item-title">自定义功能</div>
+              <ul class="s-item-ul">
+                <li>
+                  <p>基础模型</p>
+                  <ul>
+                    <li>初始视角</li>
+                    <li>初始大小</li>
+                    <li>自定义背景</li>
+                    <li>添加注释 (* 个人版5个，专业版20个，企业版50个)</li>
+                    <li>更多功能陆续开放中</li>
+                  </ul>
+                </li>
+                <li>
+                  <p>专业属性 (* 需要专业版以上支持)</p>
+                  <ul>
+                    <li>Shading</li>
+                    <li>Lighting</li>
+                    <li>多模型场景编辑</li>
+                    <li>创建动画</li>
+                    <li>纹理后期滤镜</li>
+                  </ul>
+                </li>
+                <li>
+                  <p>企业定制服务开发 (* 企业版)</p>
+                  <!--
+                  <ul><li></li></ul>
+                  -->
+                </li>
+                <li>
+                  <p>更多炫酷功能陆续上线</p>
+                  <!--
+                  <ul><li></li></ul>
+                  -->
+                </li>
+              </ul>
            </div>
            <a href="">立即加入</a>
         </div>
@@ -441,8 +528,7 @@
     color: #f35c2c;
     margin-bottom: 0.2rem;
   }
-  .secure .small-screen
-  {
+  .secure .small-screen{
     display: block;
     padding: 1rem 0;
   }
@@ -451,32 +537,43 @@
     padding: 1rem 0;
   }
 
-  /**/
+  /*platform-parameters style*/
   .platform-parameters{
     background-repeat: no-repeat;
-      background-size: cover;
-      background-color: transparent;
-      background-position: 50% 50%;
-      background-image: url("/static/image/join-background.jpg");
+    background-size: cover;
+    background-color: transparent;
+    background-position: 50% 50%;
+    background-image: url("/static/image/join-background.jpg");
   }
   .platform-parameters-title-group{
     padding: 2rem 0;
     text-align: center;
     color: white;
   }
-  .platform-parameters-title-group .s-title
-  {
+  .platform-parameters-title-group .s-title{
     font-size: 0.9rem;
-      margin-bottom: 0.8rem;
+    margin-bottom: 0.8rem;
   }
 
-  .platform-parameters-title-group .s-subtitle
-  {
+  .platform-parameters-title-group .s-subtitle{
     font-size: 0.4rem;
       margin-bottom: 1.4rem;
   }
-  .platform-parameters-title-group a
-  {
+
+  .platform-parameters-title-group .s-subtitle{
+    text-align: left;
+    padding: 0 0.5rem;
+  }
+  .platform-parameters-title-group .s-item-title{
+    margin-bottom: 0.5rem;
+  }
+  .platform-parameters-title-group .s-item-ul{
+    font-size: 0.3rem;
+  }
+  .platform-parameters-title-group .s-item-ul>li{
+    margin-bottom: 0.4rem;
+  }
+  .platform-parameters-title-group a{
       border: 0.04rem solid white;
       border-radius: 0.08rem;
       color: white;
@@ -484,6 +581,15 @@
       font-weight: bold;
       cursor: pointer;
       font-size: 0.44rem;
+  }
+  .platform-parameters-title-group #webvr{
+    border: none; 
+    color: white;
+    padding: 0; 
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration:underline;
+    font-size: 0.3rem;
   }
 
   @media (min-width: 992px) { 
@@ -561,5 +667,18 @@
       width: 80%;
       margin:0 auto; 
     }
+
+    /*platform-parameters style*/
+    .platform-parameters-title-group .s-subtitle{
+      padding: 0 15%;
+    }
   }
+
+  @media (min-width: 1200px){
+    /*platform-parameters style*/
+    .platform-parameters-title-group .s-subtitle{
+      padding: 0 25%;
+    }
+  }
+
 </style>
