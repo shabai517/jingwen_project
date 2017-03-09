@@ -14,7 +14,7 @@
         </div>
         <div class="col-md-6">
           <div class="right">
-            <!--<iframe id="banner-demo" allowfullscreen="yes" scrolling="no" frameborder="0" src="https://dev.huasheng.io/inner-page-demo.html" style="width: 100%; height: 5.34rem;"></iframe>-->
+            <iframe id="banner-demo" allowfullscreen="yes" scrolling="no" frameborder="0" src="https://dev.huasheng.io/inner-page-demo.html" style="width: 100%; height: 5.34rem;"></iframe>
           </div>
         </div>
       </div>

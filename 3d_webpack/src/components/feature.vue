@@ -270,6 +270,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  /*whole-view style*/
   .whole-view{
     background-repeat: no-repeat;
       background-size: cover;
@@ -680,5 +681,4 @@
       padding: 0 25%;
     }
   }
-
 </style>
