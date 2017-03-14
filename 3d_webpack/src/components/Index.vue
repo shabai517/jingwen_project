@@ -501,7 +501,7 @@
   }
   @media (min-width: 992px) { 
     .slide{
-      padding-top: 100px;
+      padding-top: 2rem;
     }
     .slide .left{
       height: 10rem;

@@ -32,7 +32,8 @@
                 }
 
                 function dd3NET(){
-                    this.m = 0
+                    this.m = 123;
+                    this.b = this.m;
                 }
 
                 dd3NET.prototype.a = function(){
@@ -47,20 +48,67 @@
                     this.m =1;
                 }
 
-             
+                function PeerNet() {
+                  dd3NET.call(this,[]);
+                }
+
+               
                 
+                var peernet = new PeerNet();
                 var dd3NET = new dd3NET();
+                console.log
+                console.log(peernet);
                 
-                dd3NET.a();
-                //dd3NET.a.bind(dd3NET)();
-                //dd3NET.a.bind(null)();
-              
-                //dd3NET.a();
-                //dd3Net.use('peerjs',{});
-               // dd3Net.init();
-                //dd3Net.connect(1,2);
-                b.a('data');
-          
+       
+
+       
+
+                
+                function Person(name){      
+                    this.name = name;  
+                }  
+
+                Person.prototype.getName = function() { 
+                console.log(this.name); 
+                    return this.name;  
+                }  
+
+                function Chinese(name, nation) {  
+                    console.log(this.prototype);
+                    Person.call(this, name);  
+                    this.nation = nation;  
+                }  
+
+                //继承方法  
+                function inherit(subClass, superClass) {  
+                    function F() {};  
+                    F.prototype = superClass.prototype;  
+                    subClass.prototype = new F();  
+                    subClass.prototype.constructor = subClass.constructor;  
+                }  
+
+                inherit(Chinese, Person);  
+
+                Chinese.prototype.getNation = function() {  
+                    return this.nation;  
+                };  
+
+                var p = new Person('shijun');  
+                var c = new Chinese("liyatang", "China");  
+
+                console.log(p); // Person {name: "shijun", getName: function}  
+                console.log(c); // Chinese {name: "liyatang", nation: "China", constructor: function, getNation: function, getName: function}  
+
+                p.getName();
+                c.getName();
+
+                console.log(p.constructor); // function Person(name){}  
+                console.log(c.constructor); // function Chinese(){}  
+
+                console.log(c instanceof Chinese); // true  
+                console.log(c instanceof Person); // true
+                
+
         </script>
 
        
