@@ -512,7 +512,6 @@
                 </ul>
       		</div>
         </div>
-        
       </div>
     </div>
   </div>
@@ -523,7 +522,7 @@
     name: 'discover',
   }
 </script>
-<style src="../assets/font-awesome-4.7.0/css/font-awesome.min.css"></style> 
+
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .discover{
@@ -596,9 +595,11 @@
   	display: block;
     position: relative;
     width: 100%;
+    padding-top: 75%
   }
   .discover-items-container .image-container{
-  	height:200px;
+  	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
     background-position: center center;
     background-size: cover;
   }
@@ -720,12 +721,12 @@
   	padding: 0 0.5rem
   }
     .discover-items-container .items .item{ 
-	    width: calc((100% - 20px * (2)) / 3 - 1px);
+	    width: calc((100% - 20px * (2)) / 5 - 1px);
 	}
   }
   @media (min-width: 1400px) { 
     .discover-items-container .items .item{ 
-	    width: calc((100% - 20px * (2)) / 4 - 1px);
+	    width: calc((100% - 20px * (2)) / 6 - 1px);
 	}
   }
 </style>
