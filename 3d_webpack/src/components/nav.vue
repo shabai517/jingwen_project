@@ -19,7 +19,7 @@
             </span>
            <span class="nav-center">
               <span class="nav-tiem">
-                <img src="/static/image/logo.png" alt="HTML tutorial" style="width:0.9rem;height:0.9rem;border:0;">
+                <img src="/static/image/logo.png" alt="HTML tutorial" style="width:0.8rem;height:0.8rem;border:0;">
                </span>
             </span>
            <span class="nav-right">
@@ -157,7 +157,7 @@
       left:initial;
     }
     #navbar .nav-tiem{
-      padding: 0.1rem 0.5rem;
+      padding: 0rem 0.5rem;
     }
   }
   @media (min-width: 1200px){
@@ -166,7 +166,7 @@
       margin: 0 1.25%;
     }
     #navbar .nav-tiem{  
-      padding: 0.1rem 0.7rem;
+      padding: 0rem 0.7rem;
     }
   }
 </style>
