@@ -13,57 +13,37 @@
       <script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
         <script>
                 
-                var a = 111;
-                var m= [1,2,3,4,5]
-           
-                var b = {
-                  a:function(data){
-                    var _self = this;
-                    //console.log()
-                    console.log(this);
-                    switch (data){
-                      case 'data':
-                      console.log(this);
-                    }
-                  },
-                  b:function(){
+               /*this constructer will be inheretied by the other protocols*/
+    function DD3Net(protocol, config) {
+      console.log(protocol);
+        var protocol = protocol || null;
+console.log(protocol);
+      if (protocol === "peerjs") 
+          console.log(protocol);
+      
+      else if (protocol === "signalr") 
+          console.log(protocol);
 
-                  }
-                }
+      else if (protocol === "socketio") { }
 
-                function dd3NET(){
-                    this.m = 123;
-                    this.b = this.m;
-                }
+      else if (protocol === null) 
+          console.log(protocol);
 
-                dd3NET.prototype.a = function(){
-                    
-                   console.log(this);
-                   m.forEach(function(){
-                    console.log(this);
-                   })
-                }
-
-                dd3NET.prototype.b = function(){
-                    this.m =1;
-                }
-
-                function PeerNet() {
-                  dd3NET.call(this,[]);
-                }
-
-               
-                
-                var peernet = new PeerNet();
-                var dd3NET = new dd3NET();
-                console.log
-                console.log(peernet);
+      else
+          throw new Error('No specific protocal name in DD3Net parameters');
+    }
                 
        
-
+var p = new DD3Net(); 
        
 
+    function PeerNet (){
+      this.a = 1;
+    }
                 
+        console.log(p);
+
+
                 function Person(name){      
                     this.name = name;  
                 }  
@@ -93,6 +73,7 @@
                     return this.nation;  
                 };  
 
+                  /*
                 var p = new Person('shijun');  
                 var c = new Chinese("liyatang", "China");  
 
@@ -107,6 +88,7 @@
 
                 console.log(c instanceof Chinese); // true  
                 console.log(c instanceof Person); // true
+                */
                 
 
         </script>
