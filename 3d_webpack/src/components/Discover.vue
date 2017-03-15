@@ -851,11 +851,12 @@
 
   }
   @media (min-width: 992px) { 
+
   	.discover-container{
   		padding-top: 1rem;
   	} 
   	.discover-items-container{
-  		padding: 0 0.5rem
+  		padding: 0.5rem 0.5rem
   	}
     .discover-items-container .items .item{ 
 	    width: calc((100% - 60px * (2)) / 3 - 1px);
@@ -874,7 +875,7 @@
 
   @media (min-width: 1400px) { 
   	.discover-items-container{
-  		padding: 0 1.5rem
+  		padding: 0.5 1.5rem
   	}
 
     .discover-items-container .items .item{ 
@@ -884,10 +885,6 @@
   }
 
   @media (min-width: 1600px) { 
-  	.discover-items-container{
-  		padding: 0 1.5rem
-  	}
-
     .discover-items-container .items .item{ 
 	    width: calc((100% - 20px * (2)) / 7 - 1px);
 	}
